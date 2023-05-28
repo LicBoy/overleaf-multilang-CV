@@ -1,0 +1,182 @@
+%-------------------------
+% Resume in Latex
+% Author : Ruslan Akhmetvaleev
+%------------------------
+
+\documentclass[12pt, letterpaper]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+% LANGUAGE SWITCH! Uncomment needed language
+\usepackage[english,russian]{babel}
+\newif\ifen
+\newif\ifru
+% \entrue % english
+\rutrue % russian
+\newcommand{\langen}[1]{
+  \ifen\selectlanguage{english}#1\fi}
+\newcommand{\langru}[1]{
+  \ifru\selectlanguage{russian}#1\fi}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\input{dictionary.tex}
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\Large \name} & Email : \href{mailto:ahmetvaleevr@gmail.com}{ahmetvaleevr@gmail.com}\\
+  \textit{\small \underNameStatus\quad$\hat$\textunderscore$\hat$}
+  & \mobileWord : +7 705 9089567 \\
+  {}
+  & \locationWord : \location
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{\educationWord}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+        {\uniFirstName}{\uniFirstLocation}
+        {\uniFirstDegree}{\uniFirstDate}
+    \resumeSubheading
+        {\uniSecondName}{\uniSecondLocation}
+        {\uniSecondDegree}{\uniSecondDate}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{\expWord}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {\jobFirstName}{\jobFirstLocation}
+      {\jobFirstPosition}{\jobFirstDate}
+      \resumeItemListStart
+        \resumeItem{\jobFirstItemFirstTitle}
+          {\jobFirstItemFirstDesc}
+        \resumeItem{\jobFirstItemSecondTitle}
+          {\jobFirstItemSecondDesc}
+        \resumeItem{\jobFirstItemThirdTitle}
+          {\jobFirstItemThirdDesc}
+      \resumeItemListEnd
+
+    \resumeSubheading
+        {\jobSecondName}{\jobSecondLocation}
+        {\jobSecondPosition}{\jobSecondDate}
+      \resumeItemListStart
+        \resumeItem{\jobSecondItemFirstTitle}
+          {\jobSecondItemFirstDesc}
+        \resumeItem{\jobSecondItemSecondTitle}
+          {\jobSecondItemSecondDesc}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\section{\projectsWord}
+   \resumeSubHeadingListStart
+    \resumeSubheading
+      {\projectFirstName}{\textit{\projectFirstDate}}
+      {\projectPositionCreator}{github.com/LicBoy/thesis-SR}
+      \resumeItemListStart
+        \resumeItem{\projectFirstTitleFirst}{\projectFirstDescFirst}
+        \resumeItem{\projectFirstTitleSecond}{\projectFirstDescSecond}
+        \resumeItem{\projectFirstTitleThird}{\projectFirstDescThird}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {\projectSecondName}{\textit{\projectSecondDate}}
+      {\projectPositionCreator}{github.com/LicBoy/localbits}
+      \resumeItemListStart
+        \resumeItem{\projectSecondTitleFirst}{\projectSecondDescFirst}
+        \resumeItem{\projectSecondTitleSecond}{\projectSecondDescSecond}
+        \resumeItem{\projectSecondTitleThird}{\projectSecondDescThird}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {\projectThirdName}{\textit{\projectThirdDate}}
+      {\projectPositionCreator}{github.com/LicBoy/2D-Game-Swiper}
+      \resumeItemListStart
+        \resumeItem{\projectThirdTitleFirst}{\projectThirdDescFirst}
+        \resumeItem{\projectThirdTitleSecond}{\projectThirdDescSecond}
+        \resumeItem{\projectThirdTitleThird}{\projectThirdDescThird}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%
+%--------PROGRAMMING SKILLS------------
+\section{\skillsWord}
+ \resumeSubHeadingListStart
+   \item{
+        \textbf{\skillProgLanguages}{: Python, JavaScript, C\#, HTML\&CSS}
+    }
+    \item{
+        \textbf{\skillMachineLearning}{: PyTorch, Tensorflow, Numpy, scikit-learn, Catboost, CV models (CNN, Deep models, GAN, Autoencoders), Image Transformations (OpenCV, Pillow) and Data Augmentation}
+    }
+    \item{
+        \textbf{\skillAutoTesting}{: Node.js, Mocha\&Chai, Selenium, WebdriverIO, Python\&Pytest}
+    }
+    \item{
+        \textbf{\skillTools}{: Rest API, Postman, Github, Docker, Jenkins, SQL, OOP, Unity3D}
+    }
+ \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
