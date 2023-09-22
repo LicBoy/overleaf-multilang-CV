@@ -19,8 +19,8 @@
 \newif\ifen
 \newif\ifru
 % LANGUAGE SWITCH!
-% \entrue % english   % Uncomment to use English
-\rutrue % russian   % Uncomment to use Russian
+\entrue % english   % Uncomment to use English
+% \rutrue % russian % Uncomment to use Russian
 \newcommand{\langen}[1]{
   \ifen\selectlanguage{english}#1\fi}
 \newcommand{\langru}[1]{
@@ -105,6 +105,18 @@
 %-----------EXPERIENCE-----------------
 \section{\expWord}
   \resumeSubHeadingListStart
+      \resumeSubheading
+          {\jobThirdName}{\jobThirdLocation}
+          {\jobThirdPosition}{\jobThirdDate}
+          \resumeItemListStart
+            \resumeItem{\jobThirdItemFirstTitle}
+              {\jobThirdItemFirstDesc}
+            \resumeItem{\jobThirdItemSecondTitle}
+              {\jobThirdItemSecondDesc}
+            \resumeItem{\jobThirdItemThirdTitle}
+              {\jobThirdItemThirdDesc}
+          \resumeItemListEnd
+          
     \resumeSubheading
       {\jobFirstName}{\jobFirstLocation}
       {\jobFirstPosition}{\jobFirstDate}
@@ -164,7 +176,7 @@
 \section{\skillsWord}
  \resumeSubHeadingListStart
    \item{
-        \textbf{\skillProgLanguages}{: Python, JavaScript, C\#, HTML\&CSS}
+        \textbf{\skillProgLanguages}{: Python, JavaScript, C\#, SQL}
     }
     \item{
         \textbf{\skillMachineLearning}{: PyTorch, Tensorflow, Numpy, scikit-learn, Catboost, CV models (CNN, Deep models, GAN, Autoencoders), Image Transformations (OpenCV, Pillow) and Data Augmentation}
@@ -173,7 +185,7 @@
         \textbf{\skillAutoTesting}{: Node.js, Mocha\&Chai, Selenium, WebdriverIO, Python\&Pytest}
     }
     \item{
-        \textbf{\skillTools}{: Rest API, Postman, Github, Docker, Jenkins, SQL, OOP, Unity3D}
+        \textbf{\skillTools}{: Rest API, Postman, Jira, Github, Docker, Jenkins, SQL, Oracle DB}
     }
  \resumeSubHeadingListEnd
 
