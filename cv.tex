@@ -19,11 +19,11 @@
 \newif\ifen
 \newif\ifru
 % LANGUAGE SWITCH!
-% \entrue % english   % Uncomment to use English
-\rutrue % russian % Uncomment to use Russian
-\newcommand{\langen}[1]{
+\entrue % english   % Uncomment to use English
+% \rutrue % russian % Uncomment to use Russian
+\newcommand{\langen}[1]{%
   \ifen\selectlanguage{english}#1\fi}
-\newcommand{\langru}[1]{
+\newcommand{\langru}[1]{%
   \ifru\selectlanguage{russian}#1\fi}
 
 \pagestyle{fancy}
@@ -66,6 +66,12 @@
     \end{tabular*}\vspace{-5pt}
 }
 
+% Project with a one-paragraph description
+\newcommand{\resumeProject}[5]{
+  \resumeSubheading{#1}{#2}{#3}{#4}
+  \begin{itemize}\item\small{#5}\end{itemize}\vspace{-5pt}
+}
+
 \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
 
 \renewcommand{\labelitemii}{$\circ$}
@@ -82,115 +88,98 @@
 
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{\Large \name} & Email : \href{mailto:ahmetvaleevr@gmail.com}{ahmetvaleevr@gmail.com}\\
-  \textit{\small \underNameStatus\quad$\hat$\textunderscore$\hat$}
-  & \mobileWord : +7 705 9089567 \\
-  {}
-  & \locationWord : \location
+  \textbf{\Large \name} & \href{mailto:ahmetvaleevr@gmail.com}{ahmetvaleevr@gmail.com} \\
+  \headline & +7 705 908 9567 \textbullet\ \href{https://t.me/Licman}{t.me/Licman} \\
+  \textit{\small \location} & \href{https://www.linkedin.com/in/licman}{linkedin.com/in/licman} \textbullet\ \href{https://github.com/LicBoy}{github.com/LicBoy} \\
 \end{tabular*}
+
+
+%-----------SUMMARY-----------------
+\section{\summaryWord}
+  \small{\summaryText}
+
+
+%-----------EXPERIENCE-----------------
+\section{\expWord}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {\jobCmaName}{\remoteWord}
+      {\jobCmaPosition}{\jobCmaDate}
+      \resumeItemListStart
+        \resumeItem{\jobCmaItemFirstTitle}{\jobCmaItemFirstDesc}
+        \resumeItem{\jobCmaItemSecondTitle}{\jobCmaItemSecondDesc}
+        \resumeItem{\jobCmaItemThirdTitle}{\jobCmaItemThirdDesc}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {\jobAqaName}{\remoteWord}
+      {\jobAqaPosition}{\jobAqaDate}
+      \resumeItemListStart
+        \resumeItem{\jobAqaItemFirstTitle}{\jobAqaItemFirstDesc}
+        \resumeItem{\jobAqaItemSecondTitle}{\jobAqaItemSecondDesc}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {\jobRevName}{\remoteWord}
+      {\jobRevPosition}{\jobRevDate}
+      \resumeItemListStart
+        \resumeItem{\jobRevItemFirstTitle}{\jobRevItemFirstDesc}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{\projectsWord}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {\projRahatName}{\projRahatDate}
+      {\projRahatRole}{\href{https://github.com/LicBoy/rahat-go}{github.com/LicBoy/rahat-go}}
+      \resumeItemListStart
+        \resumeItem{\projRahatItemFirstTitle}{\projRahatItemFirstDesc}
+        \resumeItem{\projRahatItemSecondTitle}{\projRahatItemSecondDesc}
+        \resumeItem{\projRahatItemThirdTitle}{\projRahatItemThirdDesc}
+      \resumeItemListEnd
+
+    \resumeProject
+      {\projAvitoName}{\projAvitoDate}
+      {\projAvitoRole}{\href{https://github.com/LicBoy/chatGPT-avito-solver}{github.com/LicBoy/chatGPT-avito-solver}}
+      {\projAvitoDesc}
+
+    \resumeProject
+      {\projThesisName}{\projThesisDate}
+      {\projThesisRole}{\href{https://github.com/LicBoy/thesis-SR}{github.com/LicBoy/thesis-SR}}
+      {\projThesisDesc}
+
+    \resumeProject
+      {\projEarlyName}{\projEarlyDate}
+      {}{\href{https://github.com/LicBoy/2D-Game-Swiper-}{github.com/LicBoy/2D-Game-Swiper-}}
+      {\projEarlyDesc}
+  \resumeSubHeadingListEnd
+
+
+%--------SKILLS------------
+\section{\skillsWord}
+  \resumeSubHeadingListStart
+    \item{\small\textbf{\skillAutoTesting}{: \skillAutoTestingList}}
+    \item{\small\textbf{\skillDomain}{: \skillDomainList}}
+    \item{\small\textbf{\skillDev}{: \skillDevList}}
+    \item{\small\textbf{\skillAI}{: \skillAIList}}
+    \item{\small\textbf{\skillDevOps}{: \skillDevOpsList}}
+    \item{\small\textbf{\skillMachineLearning}{: \skillMachineLearningList}}
+    \item{\small\textbf{\skillLanguages}{: \skillLanguagesList}}
+  \resumeSubHeadingListEnd
 
 
 %-----------EDUCATION-----------------
 \section{\educationWord}
   \resumeSubHeadingListStart
     \resumeSubheading
-        {\uniFirstName}{\uniFirstLocation}
-        {\uniFirstDegree}{\uniFirstDate}
+      {\uniFirstName}{\uniFirstLocation}
+      {\uniFirstDegree}{\uniFirstDate}
     \resumeSubheading
-        {\uniSecondName}{\uniSecondLocation}
-        {\uniSecondDegree}{\uniSecondDate}
+      {\uniSecondName}{\uniSecondLocation}
+      {\uniSecondDegree}{\uniSecondDate}
   \resumeSubHeadingListEnd
-
-
-%-----------EXPERIENCE-----------------
-\section{\expWord}
-  \resumeSubHeadingListStart
-      \resumeSubheading
-          {\jobThirdName}{\jobThirdLocation}
-          {\jobThirdPosition}{\jobThirdDate}
-          \resumeItemListStart
-            \resumeItem{\jobThirdItemFirstTitle}
-              {\jobThirdItemFirstDesc}
-            \resumeItem{\jobThirdItemSecondTitle}
-              {\jobThirdItemSecondDesc}
-            \resumeItem{\jobThirdItemThirdTitle}
-              {\jobThirdItemThirdDesc}
-          \resumeItemListEnd
-          
-    \resumeSubheading
-      {\jobFirstName}{\jobFirstLocation}
-      {\jobFirstPosition}{\jobFirstDate}
-      \resumeItemListStart
-        \resumeItem{\jobFirstItemFirstTitle}
-          {\jobFirstItemFirstDesc}
-        \resumeItem{\jobFirstItemSecondTitle}
-          {\jobFirstItemSecondDesc}
-        \resumeItem{\jobFirstItemThirdTitle}
-          {\jobFirstItemThirdDesc}
-      \resumeItemListEnd
-
-    \resumeSubheading
-        {\jobSecondName}{\jobSecondLocation}
-        {\jobSecondPosition}{\jobSecondDate}
-      \resumeItemListStart
-        \resumeItem{\jobSecondItemFirstTitle}
-          {\jobSecondItemFirstDesc}
-        \resumeItem{\jobSecondItemSecondTitle}
-          {\jobSecondItemSecondDesc}
-      \resumeItemListEnd
-  \resumeSubHeadingListEnd
-
-%-----------PROJECTS-----------------
-\section{\projectsWord}
-   \resumeSubHeadingListStart
-    \resumeSubheading
-      {\projectFirstName}{\textit{\projectFirstDate}}
-      {\projectPositionCreator}{github.com/LicBoy/thesis-SR}
-      \resumeItemListStart
-        \resumeItem{\projectFirstTitleFirst}{\projectFirstDescFirst}
-        \resumeItem{\projectFirstTitleSecond}{\projectFirstDescSecond}
-        \resumeItem{\projectFirstTitleThird}{\projectFirstDescThird}
-      \resumeItemListEnd
-
-    \resumeSubheading
-      {\projectSecondName}{\textit{\projectSecondDate}}
-      {\projectPositionCreator}{github.com/LicBoy/localbits}
-      \resumeItemListStart
-        \resumeItem{\projectSecondTitleFirst}{\projectSecondDescFirst}
-        \resumeItem{\projectSecondTitleSecond}{\projectSecondDescSecond}
-        \resumeItem{\projectSecondTitleThird}{\projectSecondDescThird}
-      \resumeItemListEnd
-
-    \resumeSubheading
-      {\projectThirdName}{\textit{\projectThirdDate}}
-      {\projectPositionCreator}{github.com/LicBoy/2D-Game-Swiper}
-      \resumeItemListStart
-        \resumeItem{\projectThirdTitleFirst}{\projectThirdDescFirst}
-        \resumeItem{\projectThirdTitleSecond}{\projectThirdDescSecond}
-        \resumeItem{\projectThirdTitleThird}{\projectThirdDescThird}
-      \resumeItemListEnd
-  \resumeSubHeadingListEnd
-
-%
-%--------PROGRAMMING SKILLS------------
-\section{\skillsWord}
- \resumeSubHeadingListStart
-   \item{
-        \textbf{\skillProgLanguages}{: \langen{Kotlin, Python, SQL (Proficient); JavaScript, C\# (Familiar)}\langru{Kotlin, Python, SQL (Профессионально); JavaScript, C\# (Имел опыт)}}
-    }
-    \item{
-        \textbf{\skillAutoTesting}{: \langen{BDD (Cucumber, Gherkin), WireMock, Node.js, Mocha\&Chai, Selenium, WebdriverIO, Python\&Pytest, Allure}\langru{BDD (Cucumber, Gherkin), WireMock, Node.js, Mocha\&Chai, Selenium, WebdriverIO, Python\&Pytest, Allure}}
-    }
-    \item{
-        \textbf{\skillMachineLearning}{: \langen{PyTorch, Tensorflow, Numpy, scikit-learn, Catboost, CV models (CNN, Deep models, GAN, Autoencoders), Image Transformations (OpenCV, Pillow) and Data Augmentation}\langru{PyTorch, Tensorflow, Numpy, scikit-learn, Catboost, модели CV (CNN, Deep models, GAN, Autoencoders), преобразования изображений (OpenCV, Pillow) и аугментации данных}}
-    }
-    \item{
-        \textbf{\skillTools}{: \langen{Rest API, Postman, Jira, Github, Docker, Jenkins, Oracle DB, Bash}\langru{Rest API, Postman, Jira, Github, Docker, Jenkins, Oracle DB, Bash}}
-    }
-    \item{
-        \textbf{\skillDSA}{: \langen{Decent knowledge of data structures and algorithms; active LeetCode practice (https://leetcode.com/u/licman/)}\langru{Хорошие знания структур данных и алгоритмов; регулярно практикую LeetCode (https://leetcode.com/u/licman/)}}
-    }
- \resumeSubHeadingListEnd
 
 
 %-------------------------------------------

@@ -3,11 +3,19 @@
 {\langen{Ruslan Akhmetvaleev}
 \langru{Руслан Ахметвалеев}}
 
-\newcommand{\underNameStatus}{\langen{Looking for a nice job}\langru{В поиске класной работы}}
+\newcommand{\headline}
+{\langen{QA Automation Engineer (SDET) \textbullet\ Fintech \& Payments}%
+\langru{QA Automation Engineer (SDET) \textbullet\ Финтех и платежи}}
 
-\newcommand{\mobileWord}{\langen{Mobile}\langru{Тел. номер}}
-\newcommand{\locationWord}{\langen{Location}\langru{Локация}}
-\newcommand{\location}{\langen{Da Nang, Vietnam}\langru{Дананг, Вьетнам}}
+\newcommand{\location}{\langen{Da Nang, Vietnam (remote)}\langru{Дананг, Вьетнам (удалённо)}}
+
+
+%% ----- SUMMARY SECTION -----
+\newcommand{\summaryWord}{\langen{Summary}\langru{О себе}}
+
+\newcommand{\summaryText}
+{\langen{QA Automation Engineer with 3+ years in banking and payments: I build backend test frameworks for SWIFT MT/MX (ISO 20022) and instant-payment systems in Kotlin and Python, wired into CI with clear reporting. On the side I design and ship full-stack products for small businesses with an AI-agentic workflow (Claude Code). Latest: a Telegram ordering and CRM app in Go used by a bakery's staff for several months.}
+\langru{QA Automation Engineer с опытом 3+ года в банкинге и платежах: строю фреймворки тестирования бэкенда для SWIFT MT/MX (ISO 20022) и систем мгновенных платежей на Kotlin и Python, встроенные в CI с понятной отчётностью. Параллельно проектирую и запускаю full-stack продукты для малого бизнеса с агентным AI-подходом (Claude Code). Последний: приложение для заказов и CRM в Telegram на Go, которым персонал пекарни пользовался несколько месяцев.}}
 
 
 %% ----- EDUCATION SECTION -----
@@ -16,155 +24,172 @@
 \newcommand{\uniDegreeBachelor}{\langen{Bachelor}\langru{Бакалавриат}}
 
 \newcommand{\uniFirstName}
-{\langen{Innopolis University}\langru{Университет Иннополис}}
-\newcommand{\uniFirstLocation}
-{\langen{Innopolis, Tatarstan}\langru{Иннополис, Татарстан}}
-\newcommand{\uniFirstDegree}
-{\langen{\uniDegreeBachelor, Computer Science}\langru{\uniDegreeBachelor, Информатика и вычислительная техника}}
-\newcommand{\uniFirstDate}
-{\langen{Aug. 2017 -- June 2018}\langru{Aвг. 2017 -- Июнь 2018}}
-\newcommand{\uniSecondName}
 {\langen{Kazan State Power Engineering University}\langru{Казанский Государственный Энергетический Университет}}
-\newcommand{\uniSecondLocation}
-{\langen{Kazan, Tatarstan}\langru{Казань, Татарстан}}
-\newcommand{\uniSecondDegree}
+\newcommand{\uniFirstLocation}
+{\langen{Kazan, Russia}\langru{Казань, Россия}}
+\newcommand{\uniFirstDegree}
 {\langen{\uniDegreeBachelor, Applied Mathematics}\langru{\uniDegreeBachelor, Прикладная математика}}
-\newcommand{\uniSecondDate}
+\newcommand{\uniFirstDate}
 {\langen{Sep. 2018 -- July 2022}\langru{Сен. 2018 -- Июль 2022}}
+
+\newcommand{\uniSecondName}
+{\langen{Innopolis University}\langru{Университет Иннополис}}
+\newcommand{\uniSecondLocation}
+{\langen{Innopolis, Russia}\langru{Иннополис, Россия}}
+\newcommand{\uniSecondDegree}
+{\langen{Computer Science (1st year, then transferred)}\langru{Информатика и вычислительная техника (1 курс, затем перевод)}}
+\newcommand{\uniSecondDate}
+{\langen{Aug. 2017 -- June 2018}\langru{Авг. 2017 -- Июнь 2018}}
 
 
 %% ----- WORK EXPERIENCE SECTION -----
 \newcommand{\expWord}{\langen{Work experience}\langru{Опыт работы}}
+\newcommand{\remoteWord}{\langen{Remote}\langru{Удалённо}}
 
-\newcommand{\jobThirdName}
-{\langen{CMA Small Systems AB}\langru{CMA Small Systems AB}}
-\newcommand{\jobThirdPosition}
-{\langen{QA Automation Engineer}\langru{QA Automation Engineer}}
-\newcommand{\jobThirdLocation}
-{\langen{Remote}\langru{Удалённо}}
-\newcommand{\jobThirdDate}
-{\langen{June 2023 - Present}\langru{Июнь 2023 - наст. время}}
-\newcommand{\jobThirdItemFirstTitle}
-{\langen{Framework and stack}\langru{Фреймворк и стэк}}
-\newcommand{\jobThirdItemFirstDesc}
-{\langen{Development of a backend testing framework with heavy DB work (Oracle, MS SQL), access server, REST APIs, XML message processing/generation, test server setup and log analysis. Writing autotests in Kotlin using BDD (Cucumber + Gherkin) to involve non-technical stakeholders; brought manual testers into writing autotests, saving time. Maintaining legacy Python+pytest tests ('cx\textunderscore Oracle', 'requests') and a built-in parallel runner; using mocking for testing.}\langru{Разработка фреймворка для тестирования бэкенда с активной работой с БД (Oracle, MS SQL), access server, REST API, обработкой и генерацией XML-сообщений, настройкой тестового сервера и анализом логов. Написание автотестов на Kotlin по BDD (Cucumber + Gherkin) для вовлечения нетехнических специалистов; подключили мануальных тестировщиков к написанию автотестов, что сэкономило время. Поддержка легаси-тестов на Python+pytest ('cx\textunderscore Oracle', 'requests') и собственного параллельного запуска; применение моков в тестировании.}}
-\newcommand{\jobThirdItemSecondTitle}
-{\langen{Business logic}\langru{Тестирование бизнес-логики}}
-\newcommand{\jobThirdItemSecondDesc}
-{\langen{Testing and sending transactions related to banking operations, testing company products including IPS (instant payment system), TMS/X system. Working with SWIFT, MX and MT formats, including MX\textendash MT conversion, preparing documents for various interbank transactions and certificates for message validation. Implemented a Freemarker-based framework with reusable components to generate payment messages.}\langru{Тестирование и отправка транзакций, связанных с банковскими операциями, тестирование продуктов компании, таких как IPS (система моментальных платежей), TMS/X и других. Работа со SWIFT, форматами MX и MT, включая конвертацию MX\textendash MT, подготовка документов для разных межбанковских операций и сертификатов для валидации сообщений. Реализовал фреймворк на Freemarker с переиспользуемыми компонентами для генерации платёжных сообщений.}}
-\newcommand{\jobThirdItemThirdTitle}
-{\langen{Jenkins and reporting}\langru{Jenkins и отчёты}}
-\newcommand{\jobThirdItemThirdDesc}
-{\langen{Deployment of autotests on Jenkins using a pipeline, parameterization in the Jenkinsfile for a more customized launch of autotests, for example in multi-threaded mode, for different groups of tests, etc. And generation of detailed Allure reports for the project team, so that the cause of each bug is found as quickly as possible.}\langru{Развёртывание автотестов на Jenkins с помощью пайплайна, параметризация в Jenkins-файле для более кастомизированного запуска автотестов, например в многопоточном режиме, для разных групп тестов и т.д. Также формирование детализированных Allure-отчётов для команды проекта, так что причина каждого бага находится в быстрейшие сроки.}}
+% CMA Small Systems AB
+\newcommand{\jobCmaName}{CMA Small Systems AB}
+\newcommand{\jobCmaPosition}{QA Automation Engineer}
+\newcommand{\jobCmaDate}
+{\langen{June 2023 -- Present}\langru{Июнь 2023 -- наст. время}}
 
-\newcommand{\jobFirstName}
-{\langen{A1QA}\langru{A1QA}}
-\newcommand{\jobFirstPosition}
-{\langen{Automation Testing Engineer}\langru{Инженер по автоматизации тестирования}}
-\newcommand{\jobFirstLocation}
-{\langen{Remote}\langru{Удалённо}}
-\newcommand{\jobFirstDate}
-{\langen{Jan. 2023 - June 2023}\langru{Янв. 2023 - Июнь 2023}}
-\newcommand{\jobFirstItemFirstTitle}
-{\langen{Framework}\langru{Фреймворк}}
-\newcommand{\jobFirstItemFirstDesc}
-{\langen{Writing autotests for test scenarios using Node.js (mocha + chai), Selenium and WebdriverIO. Develop and maintain your own testing framework with multiple templates: PageObject, BaseElement, BrowserFactory, etc.}\langru{Написание автотестов по тестовым сценариям с использованием Node.js (mocha+chai), Selenium и WebdriverIO. Разработка и поддержка своего фреймворка тестирования с несколькими шаблонами: PageObject, BaseElement, BrowserFactory и т. д.}}
-\newcommand{\jobFirstItemSecondTitle}
-{\langen{UI Testing}\langru{Тестирование UI}}
-\newcommand{\jobFirstItemSecondDesc}
-{\langen{Testing the UI functionality of websites, REST API functionality. Working with the developer console, selecting the necessary selectors by Xpath, CSS locators.}\langru{Тестирование функциональности UI веб-сайтов, функциональности REST API. Работа с консолью разработчика, выбор нужных селекторов через Xpath, CSS локаторы.}}
-\newcommand{\jobFirstItemThirdTitle}
-{\langen{CI, SQL, Docker}\langru{CI, SQL, Docker}}
-\newcommand{\jobFirstItemThirdDesc}
-{\langen{Testing using various APIs (eg Google API), testing using MySQL databases. I worked with Docker, I know the basic linux commands, I can deploy a basic application. Worked with Jenkins CI: build settings, build triggers (schedule, change in VCS, another job), testing reports, such as HTML reports.}\langru{Тестирование с использованием различных API (например, Google API), тестирование с использованием баз данных MySQL. Работал с Docker, знаю основные команды linux, могу развернуть базовое приложение. Работал с Jenkins CI: настройки билда, триггеры билда (расписание, изменение в VCS, другая джоба), отчёты тестирования, например HTML-отчёты.}}
+\newcommand{\jobCmaItemFirstTitle}
+{\langen{BDD test framework}\langru{BDD-фреймворк}}
+\newcommand{\jobCmaItemFirstDesc}
+{\langen{Build and maintain a backend test framework in Kotlin with Cucumber/Gherkin, covering REST APIs, XML messaging, the access server and Oracle/MS SQL state. Brought manual testers into writing automated scenarios in Gherkin, saving engineering time.}
+\langru{Разрабатываю и поддерживаю фреймворк тестирования бэкенда на Kotlin с Cucumber/Gherkin: REST API, XML-сообщения, access server, проверки состояния в Oracle/MS SQL. Подключил мануальных тестировщиков к написанию автотестов на Gherkin, что сэкономило время инженеров.}}
 
-\newcommand{\jobSecondName}
-{\langen{"Revizor Vision" LLC}\langru{ООО "Ревизор Вижен"}}
-\newcommand{\jobSecondPosition}
-{\langen{Computer Vision Engineer}\langru{Разработчик Компьютерного Зрения}}
-\newcommand{\jobSecondLocation}
-{\langen{Remote}\langru{Удалённо}}
-\newcommand{\jobSecondDate}
-{\langen{Oct. 2022 - Dec. 2022}\langru{Окт. 2022 - Дек. 2022}}
-\newcommand{\jobSecondItemFirstTitle}
-{\langen{Dataset}\langru{Датасет}}
-\newcommand{\jobSecondItemFirstDesc}
-{\langen{Collection of dataset from prepared cameras. Its processing and markup with OpenCV, Numpy and Pillow.}\langru{Сбор датасета с подготовленных камер. Его обработка и разметка при помощи OpenCV, Numpy и Pillow.}}
-\newcommand{\jobSecondItemSecondTitle}
-{\langen{Detection Model}\langru{Модель детекции}}
-\newcommand{\jobSecondItemSecondDesc}
-{\langen{Checking the quality of the detection of the company model. Changing the architecture of the model using PyTorch.}\langru{Проверка качества детекции модели компании. Изменение архитектуры модели при помощи PyTorch.}}
+\newcommand{\jobCmaItemSecondTitle}
+{\langen{Payments domain}\langru{Платёжный домен}}
+\newcommand{\jobCmaItemSecondDesc}
+{\langen{Test instant-payment (IPS) and TMS/X products end to end: SWIFT MT and ISO 20022 MX messages, MX\textendash MT conversion, interbank transaction flows and message-validation certificates. Built a Freemarker-based generator with reusable components that produces valid payment messages for test scenarios.}
+\langru{Сквозное тестирование продуктов IPS (мгновенные платежи) и TMS/X: сообщения SWIFT MT и ISO 20022 MX, конвертация MX\textendash MT, межбанковские сценарии и сертификаты для валидации сообщений. Создал генератор платёжных сообщений на Freemarker с переиспользуемыми компонентами.}}
+
+\newcommand{\jobCmaItemThirdTitle}
+{\langen{CI \& reporting}\langru{CI и отчёты}}
+\newcommand{\jobCmaItemThirdDesc}
+{\langen{Parameterized Jenkins pipelines for parallel runs and test-group selection, with detailed Allure reports so the team finds the root cause of a failure fast. Maintain the legacy Python/pytest suite (cx\textunderscore Oracle, requests) and its custom parallel runner; service mocking with WireMock.}
+\langru{Параметризованные Jenkins-пайплайны для параллельного запуска и выбора групп тестов, детальные Allure-отчёты для быстрого поиска причины падения. Поддерживаю легаси-набор на Python/pytest (cx\textunderscore Oracle, requests) с собственным параллельным раннером; мокирование сервисов через WireMock.}}
+
+% a1qa
+\newcommand{\jobAqaName}{a1qa}
+\newcommand{\jobAqaPosition}
+{\langen{Test Automation Engineer}\langru{Инженер по автоматизации тестирования}}
+\newcommand{\jobAqaDate}
+{\langen{Jan. 2023 -- June 2023}\langru{Янв. 2023 -- Июнь 2023}}
+
+\newcommand{\jobAqaItemFirstTitle}
+{\langen{UI \& API automation}\langru{Автоматизация UI и API}}
+\newcommand{\jobAqaItemFirstDesc}
+{\langen{Wrote UI and REST API autotests in JavaScript (Mocha/Chai, WebdriverIO, Selenium) on a self-built framework using Page Object, BaseElement and BrowserFactory patterns; verified data in MySQL and third-party APIs (Google).}
+\langru{Писал UI- и REST API-автотесты на JavaScript (Mocha/Chai, WebdriverIO, Selenium) на собственном фреймворке с паттернами Page Object, BaseElement, BrowserFactory; проверка данных в MySQL и сторонних API (Google).}}
+
+\newcommand{\jobAqaItemSecondTitle}
+{\langen{CI}\langru{CI}}
+\newcommand{\jobAqaItemSecondDesc}
+{\langen{Ran suites in Docker and Jenkins with scheduled, VCS-change and upstream-job triggers and HTML reports.}
+\langru{Запуск тестов в Docker и Jenkins: триггеры по расписанию, по изменениям в VCS и от других джоб, HTML-отчёты.}}
+
+% Revizor Vision
+\newcommand{\jobRevName}
+{\langen{Revizor Vision}\langru{ООО <<Ревизор Вижен>>}}
+\newcommand{\jobRevPosition}
+{\langen{Computer Vision Engineer}\langru{Разработчик компьютерного зрения}}
+\newcommand{\jobRevDate}
+{\langen{Oct. 2022 -- Dec. 2022}\langru{Окт. 2022 -- Дек. 2022}}
+
+\newcommand{\jobRevItemFirstTitle}
+{\langen{Detection}\langru{Детекция}}
+\newcommand{\jobRevItemFirstDesc}
+{\langen{Collected and labeled a camera dataset (OpenCV, NumPy, Pillow), evaluated the company's detection model and modified its architecture in PyTorch.}
+\langru{Собрал и разметил датасет с камер (OpenCV, NumPy, Pillow), оценил качество модели детекции компании и доработал её архитектуру на PyTorch.}}
 
 
 %% ----- PROJECTS SECTION -----
 \newcommand{\projectsWord}{\langen{Projects}\langru{Проекты}}
 
-\newcommand{\projectPositionCreator}
-{\langen{Creator}\langru{Создатель}}
+% Rahat Go
+\newcommand{\projRahatName}
+{\langen{Rahat Go \textendash\ Telegram ordering app \& CRM for a bakery}\langru{Rahat Go \textendash\ приложение для заказов и CRM пекарни в Telegram}}
+\newcommand{\projRahatRole}
+{\langen{Sole developer \textbullet\ Go, PostgreSQL, JavaScript, Telegram Mini Apps, Docker}\langru{Разработчик \textbullet\ Go, PostgreSQL, JavaScript, Telegram Mini Apps}}
+\newcommand{\projRahatDate}
+{\langen{Mar. 2026 -- Present}\langru{Март 2026 -- наст. время}}
 
-\newcommand{\projectFirstName}
-{\langen{Super-Resolution (CV) Diploma}\langru{Диплом по задаче Супер-разрешения (CV)}}
-\newcommand{\projectFirstDate}
-{\langen{Oct. 2021 - June 2022}\langru{Окт. 2021 - Июнь 2022}}
-\newcommand{\projectFirstTitleFirst}
-{\langen{Theory}\langru{Теория}}
-\newcommand{\projectFirstDescFirst}
-{\langen{Research of methods for image upscaling, both classical and using neural
-networks}\langru{Исследование методов апскейлинга изображений, как классических, так и с использованием нейронных сетей}}
-\newcommand{\projectFirstTitleSecond}
-{\langen{PyTorch \& Tensorflow}\langru{PyTorch \& Tensorflow}}
-\newcommand{\projectFirstDescSecond}
-{\langen{Used PyTorch and Tensorflow in process of implementing and estimating neural networks, tried different model architectures, loss functions, optimizators, etc.}\langru{Использовал PyTorch и Tensorflow в процессе реализации и оценки нейронных сетей, пробовал разные архитектуры моделей, функции потерь, оптимизаторы и т.д.}}
-\newcommand{\projectFirstTitleThird}
-{\langen{Results}\langru{Итоги}}
-\newcommand{\projectFirstDescThird}
-{\langen{Chose (E)SRGAN as best network, trained them using different architectures, hyperparameters (for instance, for weak PC), applied them for real images, checked them using different metrics.}\langru{Выбрал (E)SRGAN как лучшую сеть, обучил их на разных архитектурах, гиперпараметрах (например, для слабого ПК), применил к реальным изображениям, проверил по разным метрикам.}}
+\newcommand{\projRahatItemFirstTitle}
+{\langen{Product}\langru{Продукт}}
+\newcommand{\projRahatItemFirstDesc}
+{\langen{Designed with the owner around his real workflow and used by the bakery's staff for 3+ months to run orders, inventory and daily stock. Customers order for pickup or delivery and pay by QR inside Telegram; staff manage the menu, process orders, sell walk-ins through a POS screen and track ingredient costs and margins.}
+\langru{Спроектирован вместе с владельцем под реальные процессы; персонал пекарни 3+ месяца вёл в нём заказы, склад и дневные остатки. Клиенты заказывают самовывоз или доставку и оплачивают по QR прямо в Telegram; персонал управляет меню, обрабатывает заказы, продаёт через POS-экран и считает себестоимость и маржу.}}
 
-\newcommand{\projectSecondName}
-{\langen{Crypto Trading P2P Bot}\langru{Бот для P2P крипто-трейдинга}}
-\newcommand{\projectSecondDate}
-{\langen{Feb. 2019 - Aug. 2021}\langru{Фев. 2019 - Авг. 2021}}
-\newcommand{\projectSecondTitleFirst}
-{\langen{Python}\langru{Python}}
-\newcommand{\projectSecondDescFirst}
-{\langen{Used Python to track bitcoin price on P2P Bitcoin exchange website and perform automated buy/sell operations.}\langru{Использовал Python для отслеживания цены биткойнов на веб-сайте P2P-биржи биткойнов и выполнения автоматических операций покупки/продажи.}}
-\newcommand{\projectSecondTitleSecond}
-{\langen{Rest API}\langru{Rest API}}
-\newcommand{\projectSecondDescSecond}
-{\langen{Worked with website's API: web-requests, web-authorization. Implemented specific class for working with API using OOP.}\langru{Работал с API сайта: веб-запросы, веб-авторизация. Реализован специальный класс для работы с API с использованием ООП.}}
-\newcommand{\projectSecondTitleThird}
-{\langen{Telegram Bot}\langru{Telegram Bot}}
-\newcommand{\projectSecondDescThird}
-{\langen{Used Telegram API for creating Telegram Bot as UI.}\langru{Использован Telegram API для создания Telegram-бота в качестве пользовательского интерфейса.}}
+\newcommand{\projRahatItemSecondTitle}
+{\langen{Engineering}\langru{Разработка}}
+\newcommand{\projRahatItemSecondDesc}
+{\langen{Single Go binary serving the bot, REST API and embedded web app; Telegram initData HMAC-SHA256 auth with roles and expiring invite links; self-migrating PostgreSQL schema; delivery pricing by road distance (OSRM) with geofencing; stock checks that prevent overselling at checkout; EN/RU/VI. White-label: a new business is a new deployment, not a code fork.}
+\langru{Один Go-бинарник: бот, REST API и встроенное веб-приложение; авторизация через Telegram initData (HMAC-SHA256) с ролями и временными инвайт-ссылками; самомигрирующая схема PostgreSQL; расчёт доставки по дорожному расстоянию (OSRM) с геозонами; проверка остатков, исключающая перепродажу при оформлении; EN/RU/VI. White-label: новый бизнес \textendash\ это новый деплой, а не форк кода.}}
 
-\newcommand{\projectThirdName}
-{\langen{Android Mobile Game}\langru{Мобильная игра для Android}}
-\newcommand{\projectThirdDate}
-{\langen{Nov. 2020 - Mar. 2021}\langru{Ноя. 2020 - Март 2021}}
-\newcommand{\projectThirdTitleFirst}
-{\langen{Unity \& C\#}\langru{Unity \& C\#}}
-\newcommand{\projectThirdDescFirst}
-{\langen{Created mobile game 'Swiper' using Unity3D and C\# with arcade gameplay}\langru{Создал мобильную игру 'Swiper' с использованием Unity3D и C\# с аркадным геймплеем.}}
-\newcommand{\projectThirdTitleSecond}
-{\langen{Design}\langru{Дизайн}}
-\newcommand{\projectThirdDescSecond}
-{\langen{Created sprites using Photoshop, self-made design and animations}\langru{Создал спрайты с помощью Photoshop, с нуля созданные дизайн и анимации}}
-\newcommand{\projectThirdTitleThird}
-{\langen{Advertising}\langru{Реклама}}
-\newcommand{\projectThirdDescThird}
-{\langen{Integrated interstitial advertising using AdMob service}\langru{Интегрированная межстраничная реклама с помощью сервиса AdMob}}
+\newcommand{\projRahatItemThirdTitle}
+{\langen{Agentic workflow}\langru{Агентная разработка}}
+\newcommand{\projRahatItemThirdDesc}
+{\langen{Built with Claude Code: custom sub-agents (backend, frontend, bot, delivery) under an orchestrator, project context in CLAUDE.md, branch-per-feature with PR review (160 commits, 27 PRs). I owned architecture, review, debugging and releases; Docker on Railway with separate test/prod, GitHub Actions CI and health-check monitoring.}
+\langru{Разработан с Claude Code: собственные саб-агенты (бэкенд, фронтенд, бот, доставка) под управлением оркестратора, контекст проекта в CLAUDE.md, ветка на фичу и ревью через PR (160 коммитов, 27 PR). На мне архитектура, ревью, отладка и релизы; Docker на Railway с раздельными test/prod, CI на GitHub Actions и мониторинг через health-check.}}
+
+% Avito automation
+\newcommand{\projAvitoName}
+{\langen{Chat-labeling automation (ML + Selenium)}\langru{Автоматизация разметки чатов (ML + Selenium)}}
+\newcommand{\projAvitoRole}
+{\langen{Creator \textbullet\ Python, NLP, Selenium, JavaScript}\langru{Автор \textbullet\ Python, NLP, Selenium, JavaScript}}
+\newcommand{\projAvitoDate}{2023}
+\newcommand{\projAvitoDesc}
+{\langen{Automated my own part-time data-labeling job: a Tampermonkey script collected my labeled chats, a text classifier was trained on them, and Selenium drove the labeling UI with the model's predictions.}
+\langru{Автоматизировал собственную подработку по разметке данных: Tampermonkey-скрипт собирал размеченные мной чаты, на них обучен текстовый классификатор, а Selenium размечал интерфейс по предсказаниям модели.}}
+
+% Thesis
+\newcommand{\projThesisName}
+{\langen{Image super-resolution with GANs (thesis)}\langru{Супер-разрешение изображений на GAN (диплом)}}
+\newcommand{\projThesisRole}
+{\langen{Author \textbullet\ PyTorch, TensorFlow}\langru{Автор \textbullet\ PyTorch, TensorFlow}}
+\newcommand{\projThesisDate}
+{\langen{Oct. 2021 -- June 2022}\langru{Окт. 2021 -- Июнь 2022}}
+\newcommand{\projThesisDesc}
+{\langen{Compared classical and neural upscaling methods; trained SRGAN and ESRGAN on CelebA with tuned architectures and hyperparameters (including a low-resource setup) and evaluated 4x upscaling on real images with standard metrics.}
+\langru{Сравнил классические и нейросетевые методы апскейлинга; обучил SRGAN и ESRGAN на CelebA с подбором архитектур и гиперпараметров (в т.ч. для слабого железа) и оценил 4x-апскейлинг на реальных изображениях по стандартным метрикам.}}
+
+% Swiper + crypto bot
+\newcommand{\projEarlyName}
+{\langen{Earlier projects}\langru{Ранние проекты}}
+\newcommand{\projEarlyDate}{2019 -- 2021}
+\newcommand{\projEarlyDesc}
+{\langen{\textbf{Swiper}, an arcade mobile game in Unity/C\# with my own sprites and animations, published on Google Play with AdMob ads. \textbf{P2P crypto trading bot} in Python that tracked prices through an exchange API and traded automatically, controlled from a Telegram bot.}
+\langru{\textbf{Swiper} \textendash\ аркадная мобильная игра на Unity/C\# с собственными спрайтами и анимациями, публиковалась в Google Play с рекламой AdMob. \textbf{Бот для P2P-торговли криптовалютой} на Python: отслеживал цены через API биржи и торговал автоматически, управление через Telegram-бота.}}
 
 
 %% ----- SKILLS SECTION -----
-\newcommand{\skillsWord}
-{\langen{Programming Skills}\langru{Навыки}}
-\newcommand{\skillProgLanguages}
-{\langen{Languages}\langru{Языки прогр.}}
-\newcommand{\skillMachineLearning}
-{\langen{Machine Learning}\langru{Машинное обучение}}
-\newcommand{\skillAutoTesting}
-{\langen{Automation Testing}\langru{Автоматизация тестирования}}
-\newcommand{\skillTools}
-{\langen{Tools}\langru{Инструменты}}
-\newcommand{\skillDSA}
-{\langen{Data Structures \& Algorithms}\langru{Структуры данных \& алгоритмы}}
+\newcommand{\skillsWord}{\langen{Skills}\langru{Навыки}}
+
+\newcommand{\skillAutoTesting}{\langen{Test automation}\langru{Автоматизация тестирования}}
+\newcommand{\skillAutoTestingList}
+{BDD (Cucumber, Gherkin), Kotlin, Python/pytest, WireMock, REST API, Selenium, WebdriverIO, Mocha/Chai, Allure, Postman}
+
+\newcommand{\skillDomain}{\langen{Payments}\langru{Платежи}}
+\newcommand{\skillDomainList}
+{\langen{SWIFT MT, ISO 20022 (MX), MX\textendash MT conversion, instant payments, XML}\langru{SWIFT MT, ISO 20022 (MX), конвертация MX\textendash MT, мгновенные платежи, XML}}
+
+\newcommand{\skillDev}{\langen{Development}\langru{Разработка}}
+\newcommand{\skillDevList}
+{\langen{Go, Kotlin, Python, SQL; JavaScript, C\# (familiar); PostgreSQL, Oracle, MS SQL; Telegram Bot API \& Mini Apps}\langru{Go, Kotlin, Python, SQL; JavaScript, C\# (базово); PostgreSQL, Oracle, MS SQL; Telegram Bot API и Mini Apps}}
+
+\newcommand{\skillAI}{\langen{AI-assisted dev}\langru{AI в разработке}}
+\newcommand{\skillAIList}
+{\langen{Claude Code (multi-agent workflows, custom sub-agents, CLAUDE.md), Cursor}\langru{Claude Code (мультиагентные процессы, собственные саб-агенты, CLAUDE.md), Cursor}}
+
+\newcommand{\skillDevOps}{\langen{CI/CD \& tools}\langru{CI/CD и инструменты}}
+\newcommand{\skillDevOpsList}
+{Jenkins, GitHub Actions, Docker, Railway, Git, Jira, Bash}
+
+\newcommand{\skillMachineLearning}{\langen{Machine learning}\langru{Машинное обучение}}
+\newcommand{\skillMachineLearningList}
+{PyTorch, TensorFlow, scikit-learn, CatBoost, OpenCV, NumPy}
+
+\newcommand{\skillLanguages}{\langen{Languages}\langru{Языки}}
+\newcommand{\skillLanguagesList}
+{\langen{English (professional working), Russian (native)}\langru{Английский (рабочий), русский (родной)}}
